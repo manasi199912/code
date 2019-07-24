@@ -1,0 +1,19 @@
+int x=6,y;
+void setup() {
+  pinMode(x,INPUT);
+  Serial.begin(9600);
+}
+
+void loop() {
+  if(y=analogRead(x))
+  {
+    Serial.print("object is not detected ");
+    Serial.println(y);
+  }
+  else
+  {
+    Serial.print("object detected..");
+    Serial.println(y);
+  }
+
+}
